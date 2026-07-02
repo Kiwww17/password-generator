@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+@layer components {
+
+    .notification-after {
+        max-width: 300px;
+        height: fit-content;
+        padding: 8px;
+        display: block;
+        background-color: green;
+        border-radius: 8px;
+        transform: translateY(0);
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: white;
+        opacity: 90%;
+
+    }
+
+    .notification-before {
+        max-width: 300px;
+        height: fit-content;
+        padding: 8px;
+        display: flex;
+        visibility: hidden;
+        background-color: green;
+        border-radius: 8px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: white;
+        opacity: 90%;
+    }
+
+
+    .notification-transition {
+        transition-property: scale;
+        transition-duration: 300ms;
+    }
+}
